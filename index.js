@@ -32,8 +32,7 @@ app.use("/api/pacientes", pacienteRouter);
 
 // variables
 const port = process.env.PORT || 4000;
-const host = process.env.HOST || "127.0.0.1";
 
-app.listen(port, host, () => {
-  console.log("Servidor funcionando en el puerto:", port, host);
+app.listen(port, () => {
+  console.log("Servidor funcionando en el puerto:", port);
 });
